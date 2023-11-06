@@ -2,9 +2,5 @@ import Button from "@/components/Button/Button";
 import Navbar from "@/components/Navbar/NavBar";
 
 export default function Home() {
-  return (
-    <main>
-      <Navbar />
-    </main>
-  );
+  return <main></main>;
 }
