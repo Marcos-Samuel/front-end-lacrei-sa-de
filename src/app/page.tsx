@@ -1,10 +1,10 @@
-import Button from "@/components/button/Button";
+import Button from "@/components/Button/Button";
+import Navbar from "@/components/Navbar/NavBar";
 
 export default function Home() {
   return (
     <main>
-      <Button varient="primary" title="Arroz" />
-      <Button varient="secondary" title="Arroz" />
+      <Navbar />
     </main>
   );
 }

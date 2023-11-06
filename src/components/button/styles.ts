@@ -1,4 +1,5 @@
-import styled, { css } from "styled-components";
+import theme from "@/theme";
+import styled from "styled-components";
 
 export type StyleProps = "primary" | "secondary";
 
@@ -16,6 +17,7 @@ export const Button = styled.button<ButtonProps>`
   border: 2px solid #018762;
   color: ${({ varient }) => (varient === "primary" ? "white" : "#018762")};
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: ${theme.FONTS.TEXT};
 
   ${({ varient }) =>
     varient === "primary" &&
@@ -23,8 +25,4 @@ export const Button = styled.button<ButtonProps>`
     background: #018762;
     color: white;
   `}
-`;
-
-export const Container = styled.div`
-  text-align: center;
 `;
