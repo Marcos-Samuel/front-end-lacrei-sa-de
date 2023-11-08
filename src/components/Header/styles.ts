@@ -1,4 +1,5 @@
 import theme from "@/theme";
+import Link from "next/link";
 import styled from "styled-components";
 
 export const Conteiner = styled.header`
@@ -29,4 +30,8 @@ export const Title = styled.h1`
   line-height: 0%;
 
   font-family: "Nunito";
+`;
+
+export const LinkStyle = styled(Link)`
+  text-decoration: none;
 `;

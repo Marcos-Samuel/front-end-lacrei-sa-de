@@ -10,14 +10,11 @@ export default function CustomButton({
   variant = "primary",
   title,
   url,
-  ...rest
 }: ButtonProps) {
   return (
     <>
       <S.LinkStyle href={url}>
-        <S.Button variant={variant} {...rest}>
-          {title}
-        </S.Button>
+        <S.Button variant={variant}>{title}</S.Button>
       </S.LinkStyle>
     </>
   );
