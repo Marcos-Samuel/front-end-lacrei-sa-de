@@ -1,4 +1,4 @@
-import { StyleProps } from "@/components/Button/styles";
+import { StyleProps } from "@/components/CustomButton/styles";
 import theme from "@/theme";
 import Link from "next/link";
 import styled from "styled-components";

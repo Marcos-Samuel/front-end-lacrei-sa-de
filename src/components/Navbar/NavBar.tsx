@@ -1,4 +1,4 @@
-import { StyleProps } from "../Button/styles";
+import { StyleProps } from "../CustomButton/styles";
 import ActivLink from "./ActiveLink/ActiveLink";
 import * as S from "./styles";
 

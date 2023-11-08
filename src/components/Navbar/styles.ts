@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StyleProps } from "../Button/styles";
+import { StyleProps } from "../CustomButton/styles";
 import Link from "next/link";
 
 type NavListProps = {

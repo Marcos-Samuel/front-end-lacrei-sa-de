@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import { LinkProps } from "next/link";
 import { usePathname } from "next/navigation";
-import { StyleProps } from "../../Button/styles";
+import { StyleProps } from "../../CustomButton/styles";
 
 export type ActivLinkProps = {
   children: React.ReactNode;

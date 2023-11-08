@@ -1,4 +1,4 @@
-import Button from "@/components/Button/CustomButton";
+import Button from "@/components/CustomButton/CustomButton";
 import MainCard from "@/components/MainCard/page";
 import { Metadata } from "next";
 

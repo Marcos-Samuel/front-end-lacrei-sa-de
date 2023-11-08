@@ -3,7 +3,7 @@ import Image from "next/image";
 import * as S from "./styles";
 import { usePathname } from "next/navigation";
 
-import CustomButton from "../Button/CustomButton";
+import CustomButton from "../CustomButton/CustomButton";
 
 type MainType = {
   content: { title: string; text: string; src: string };
