@@ -13,7 +13,9 @@ export const metadata: Metadata = {
     default: "Home",
     template: "%s | Desafio Lacrei",
   },
-  icons: "./images/icon.svg",
+  icons: {
+    icon: "./images/LOGO_LACREI.svg",
+  },
 };
 
 export default function RootLayout({
@@ -28,7 +30,6 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link rel="icon" href="./images/icon.svg" sizes="any" />
       </Head>
       <StyledComponentsRegistry>
         <Layout>
