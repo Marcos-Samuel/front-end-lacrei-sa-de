@@ -1,17 +1,17 @@
 import * as S from "./styles";
 
-type Props = {
+type ButtonProps = {
   title: string;
   variant: S.StyleProps;
   url: string;
 };
 
-export default function Button({
+export default function CustomButton({
   variant = "primary",
   title,
   url,
   ...rest
-}: Props) {
+}: ButtonProps) {
   return (
     <>
       <S.LinkStyle href={url}>

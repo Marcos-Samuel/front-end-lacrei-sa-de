@@ -1,8 +1,9 @@
 "use client";
-import Image, { ImageProps } from "next/image";
+import Image from "next/image";
 import * as S from "./styles";
-import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
+import Button from "../Button/Button";
+import CustomButton from "../Button/Button";
 
 type MainType = {
   content: { title: string; text: string; src: string };
@@ -21,12 +22,12 @@ export default function MainCard({ content, border }: MainType) {
 
         {pathname === "/" && (
           <S.ContentButtons>
-            <Button
+            <CustomButton
               title={"Pessoa Usuária"}
               variant={"primary"}
               url={"pessoa-usuaria"}
             />
-            <Button
+            <CustomButton
               title={"Profissional"}
               variant={"secondary"}
               url={"profissional"}
