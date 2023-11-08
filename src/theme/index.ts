@@ -1,18 +1,11 @@
-import { Nunito } from "next/font/google";
-
-const nunito = Nunito({ subsets: ["latin"] });
-
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   COLORS: {
-    PRIMARY_BACKGROUND: "#FFF",
-    SECUNDARY_BACKGROUND: "#EEE",
-    PRIMARY: "#018762",
-    SECONDARY: "#1F1F1F",
-    TEXT: "#515151",
-  },
-
-  FONTS: {
-    TEXT: nunito,
+    WHITE: "#FFF",
+    LIGTH_GREEN: "#B0E0D3",
+    GREEN: "#018762",
+    BLACK: "#1F1F1F",
+    LIGTH_GRAY: "#EEEEEE",
+    GRAY: "#515151",
   },
 };

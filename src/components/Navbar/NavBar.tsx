@@ -1,18 +1,29 @@
-import ActivLink from "../ActiveLink/ActiveLink";
+import { StyleProps } from "../Button/styles";
+import ActivLink from "./ActiveLink/ActiveLink";
 import * as S from "./styles";
 
-export default function Navbar() {
+interface NavProps {
+  variant: StyleProps;
+}
+
+export default function Navbar({ variant }: NavProps) {
   return (
     <S.NavbarContainer>
-      <S.NavList>
+      <S.NavList variant={variant}>
         <S.NavItem>
-          <ActivLink href="/">Home</ActivLink>
+          <ActivLink variant={variant} href="/">
+            Home
+          </ActivLink>
         </S.NavItem>
         <S.NavItem>
-          <ActivLink href="/pessoa-usuaria">Pessoa Usuária</ActivLink>
+          <ActivLink variant={variant} href="/pessoa-usuaria">
+            Pessoa Usuária
+          </ActivLink>
         </S.NavItem>
         <S.NavItem>
-          <ActivLink href="/profissional">Profissional</ActivLink>
+          <ActivLink variant={variant} href="/profissional">
+            Profissional
+          </ActivLink>
         </S.NavItem>
       </S.NavList>
     </S.NavbarContainer>

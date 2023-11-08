@@ -2,15 +2,23 @@ import * as S from "./styles";
 
 type Props = {
   title: string;
-  varient: S.StyleProps;
+  variant: S.StyleProps;
+  url: string;
 };
 
-export default function Button({ varient = "primary", title, ...rest }: Props) {
+export default function Button({
+  variant = "primary",
+  title,
+  url,
+  ...rest
+}: Props) {
   return (
     <>
-      <S.Button varient={varient} {...rest}>
-        {title}
-      </S.Button>
+      <S.LinkStyle href={url}>
+        <S.Button variant={variant} {...rest}>
+          {title}
+        </S.Button>
+      </S.LinkStyle>
     </>
   );
 }

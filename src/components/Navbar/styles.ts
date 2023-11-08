@@ -1,21 +1,29 @@
-import Link from "next/link";
 import styled from "styled-components";
+import { StyleProps } from "../Button/styles";
+import Link from "next/link";
 
-export type NavProps = "active" | "desabled";
-
-interface ButtonProps {
-  varient: NavProps;
-}
+type NavListProps = {
+  variant: StyleProps;
+};
 
 export const NavbarContainer = styled.nav`
-  padding: 10;
+  width: 20.4rem;
+  display: flex;
 `;
 
-export const NavList = styled.ul`
+export const NavList = styled.ul<NavListProps>`
+  width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 520px) {
+    display: flex;
+    flex-direction: ${({ variant }) =>
+      variant === "primary" ? "row" : "column"};
+  }
 `;
 
 export const NavItem = styled.li`

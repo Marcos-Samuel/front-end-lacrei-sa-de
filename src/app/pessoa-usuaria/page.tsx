@@ -1,11 +1,20 @@
-import React from "react";
+import MainCard from "@/components/MainCard/page";
+import { Metadata } from "next";
 
-// import { Container } from './styles';
+export const metadata: Metadata = {
+  title: "Pessoa Usuária",
+};
+
+const Content = {
+  title: "Pessoa Usuária",
+  text: "A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado por profissionais de qualidade e que atendam às suas necessidades de forma segura e acolhedora.",
+  src: "./images/pessoa-usuaria.svg",
+};
 
 export default function User() {
   return (
-    <>
-      <h1>Ola</h1>
-    </>
+    <main>
+      <MainCard content={Content} border={true} />
+    </main>
   );
 }

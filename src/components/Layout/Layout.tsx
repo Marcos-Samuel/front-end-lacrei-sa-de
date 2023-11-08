@@ -1,5 +1,7 @@
 import * as S from "./styles";
 
+import "@fontsource/nunito";
+
 type LayoutProps = {
   children: React.ReactNode;
 };

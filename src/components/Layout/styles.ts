@@ -4,6 +4,6 @@ export const Container = styled.body`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+
+  font-family: Nunito;
 `;
