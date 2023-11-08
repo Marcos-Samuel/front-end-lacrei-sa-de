@@ -2,8 +2,8 @@
 import Image from "next/image";
 import * as S from "./styles";
 import { usePathname } from "next/navigation";
-import Button from "../Button/Button";
-import CustomButton from "../Button/Button";
+
+import CustomButton from "../Button/CustomButton";
 
 type MainType = {
   content: { title: string; text: string; src: string };
